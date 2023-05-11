@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/any"
+    tools:context=".home">
+
+
+    <ScrollView
+        android:layout_width="415dp"
+        android:layout_height="708dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/p7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <SearchView
+                    android:id="@+id/searchView"
+                    android:layout_width="339dp"
+                    android:layout_height="38dp"
+                    android:background="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/p1"
+                android:layout_width="match_parent"
+                android:layout_height="153dp">
+
+                <TextView
+                    android:id="@+id/p1dis2"
+                    android:layout_width="224dp"
+                    android:layout_height="26dp"
+                    android:layout_marginEnd="32dp"
+                    android:text="55 lesson"
+                    android:textAlignment="gravity"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.414" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="146dp"
+                    android:layout_height="137dp"
+                    android:layout_marginStart="4dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/course1"
+                    tools:layout_editor_absoluteY="0dp" />
+
+                <TextView
+                    android:id="@+id/p1dis"
+                    android:layout_width="227dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="32dp"
+                    android:text="Development"
+                    android:textAlignment="gravity"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.125" />
+
+                <Button
+                    android:id="@+id/p1b"
+                    android:layout_width="157dp"
+                    android:layout_height="37dp"
+                    android:background="#4572F8"
+                    android:text="add to cart"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.91"
+                    app:layout_constraintStart_toEndOf="@+id/p1price"
+                    app:layout_constraintTop_toBottomOf="@+id/p1dis"
+                    app:layout_constraintVertical_bias="1.0"
+                    tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+                <TextView
+                    android:id="@+id/p1price"
+                    android:layout_width="84dp"
+                    android:layout_height="42dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="for 50$"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/p2"
+                android:layout_width="match_parent"
+                android:layout_height="153dp">
+
+                <TextView
+                    android:id="@+id/p2dis2"
+                    android:layout_width="203dp"
+                    android:layout_height="33dp"
+                    android:layout_marginEnd="48dp"
+                    android:text="course description"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toTopOf="@+id/p2price"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.81" />
+
+                <TextView
+                    android:id="@+id/p2dis"
+                    android:layout_width="209dp"
+                    android:layout_height="36dp"
+                    android:layout_marginEnd="40dp"
+                    android:text="web"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/p2dis2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <Button
+                    android:id="@+id/p2b"
+                    android:layout_width="151dp"
+                    android:layout_height="33dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#4572F8"
+                    android:text="Add to cart"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="158dp"
+                    android:layout_height="139dp"
+                    app:srcCompat="@drawable/course2"
+                    tools:layout_editor_absoluteX="-1dp"
+                    tools:layout_editor_absoluteY="7dp" />
+
+                <TextView
+                    android:id="@+id/p2price"
+                    android:layout_width="84dp"
+                    android:layout_height="42dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="for 60$"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/p3"
+                android:layout_width="match_parent"
+                android:layout_height="153dp"
+                app:layout_constraintBottom_toTopOf="@+id/p4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/p2"
+                app:layout_constraintVertical_bias="0.5">
+
+                <TextView
+                    android:id="@+id/p3dis"
+                    android:layout_width="203dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="44dp"
+                    android:text="cyber security"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/p3dis2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.735" />
+
+                <TextView
+                    android:id="@+id/p3dis2"
+                    android:layout_width="203dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="44dp"
+                    android:text=" course description"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toTopOf="@+id/p3b"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.847" />
+
+                <Button
+                    android:id="@+id/p3b"
+                    android:layout_width="157dp"
+                    android:layout_height="37dp"
+                    android:background="#4572F8"
+                    android:text="Add to cart"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.777"
+                    app:layout_constraintStart_toEndOf="@+id/p3price"
+                    app:layout_constraintTop_toBottomOf="@+id/p3dis"
+                    app:layout_constraintVertical_bias="0.793"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/p3price"
+                    android:layout_width="84dp"
+                    android:layout_height="42dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="for 55$"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="170dp"
+                    android:layout_height="120dp"
+                    android:layout_marginEnd="88dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/p3b"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.696"
+                    app:srcCompat="@drawable/course3" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/p4"
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/p4dis2"
+                    android:layout_width="242dp"
+                    android:layout_height="32dp"
+                    android:layout_marginEnd="4dp"
+                    android:text=" course description"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toTopOf="@+id/p4price"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/p1img"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <TextView
+                    android:id="@+id/p4dis"
+                    android:layout_width="242dp"
+                    android:layout_height="32dp"
+                    android:layout_marginEnd="4dp"
+                    android:text="course description"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/p1price"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/p1img"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/p4price"
+                    android:layout_width="84dp"
+                    android:layout_height="42dp"
+                    android:text="for 40$"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/p4b"
+                    app:layout_constraintTop_toBottomOf="@+id/p4dis"
+                    app:layout_constraintVertical_bias="0.916" />
+
+                <Button
+                    android:id="@+id/p4b"
+                    android:layout_width="157dp"
+                    android:layout_height="37dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="#4572F8"
+                    android:text="Add to cart"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="165dp"
+                    android:layout_height="119dp"
+                    app:srcCompat="@drawable/course1"
+                    tools:layout_editor_absoluteX="-6dp"
+                    tools:layout_editor_absoluteY="16dp" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/p5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/p5dis2"
+                    android:layout_width="255dp"
+                    android:layout_height="29dp"
+                    android:text="course description"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/p1price"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/p1img"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/p5price"
+                    android:layout_width="84dp"
+                    android:layout_height="42dp"
+                    android:text="for 30$"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.906" />
+
+                <TextView
+                    android:id="@+id/p5dis"
+                    android:layout_width="255dp"
+                    android:layout_height="29dp"
+                    android:text="course description"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/p1img"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.359" />
+
+                <Button
+                    android:id="@+id/p5b"
+                    android:layout_width="157dp"
+                    android:layout_height="37dp"
+                    android:background="#4572F8"
+                    android:text="add to cart"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/p4price"
+                    app:layout_constraintTop_toBottomOf="@+id/p4dis"
+                    app:layout_constraintVertical_bias="0.5"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="162dp"
+                    android:layout_height="132dp"
+                    app:srcCompat="@drawable/course3"
+                    tools:layout_editor_absoluteX="3dp"
+                    tools:layout_editor_absoluteY="-15dp" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/p6"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.5"
+                tools:layout_editor_absoluteY="386dp">
+
+
+                <Button
+                    android:id="@+id/p6b"
+                    android:layout_width="407dp"
+                    android:layout_height="49dp"
+                    android:background="#9C27B0"
+                    android:text="Cart"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </android.support.constraint.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
